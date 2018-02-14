@@ -6671,7 +6671,7 @@ See Also: EditorBuildSettingsScene, EditorBuildSettings.scenes.</para>
       <param name="enumValue">Enum flags value (Only supports enum values for enum types with int as the underlying type).</param>
       <param name="style">Optional GUIStyle.</param>
       <returns>
-        <para>The enum flags value modified by the user. This is a selection BitMask where each bit represents an Enum value index. (Note this returned value is not itself an Enum).</para>
+        <para>The enum flags value modified by the user.</para>
       </returns>
     </member>
     <member name="M:UnityEditor.EditorGUI.EnumFlagsField(UnityEngine.Rect,System.Enum,UnityEngine.GUIStyle)">
@@ -6683,7 +6683,7 @@ See Also: EditorBuildSettingsScene, EditorBuildSettings.scenes.</para>
       <param name="enumValue">Enum flags value (Only supports enum values for enum types with int as the underlying type).</param>
       <param name="style">Optional GUIStyle.</param>
       <returns>
-        <para>The enum flags value modified by the user. This is a selection BitMask where each bit represents an Enum value index. (Note this returned value is not itself an Enum).</para>
+        <para>The enum flags value modified by the user.</para>
       </returns>
     </member>
     <member name="M:UnityEditor.EditorGUI.EnumFlagsField(UnityEngine.Rect,System.String,System.Enum)">
@@ -6695,7 +6695,7 @@ See Also: EditorBuildSettingsScene, EditorBuildSettings.scenes.</para>
       <param name="enumValue">Enum flags value (Only supports enum values for enum types with int as the underlying type).</param>
       <param name="style">Optional GUIStyle.</param>
       <returns>
-        <para>The enum flags value modified by the user. This is a selection BitMask where each bit represents an Enum value index. (Note this returned value is not itself an Enum).</para>
+        <para>The enum flags value modified by the user.</para>
       </returns>
     </member>
     <member name="M:UnityEditor.EditorGUI.EnumFlagsField(UnityEngine.Rect,System.String,System.Enum,UnityEngine.GUIStyle)">
@@ -6707,7 +6707,7 @@ See Also: EditorBuildSettingsScene, EditorBuildSettings.scenes.</para>
       <param name="enumValue">Enum flags value (Only supports enum values for enum types with int as the underlying type).</param>
       <param name="style">Optional GUIStyle.</param>
       <returns>
-        <para>The enum flags value modified by the user. This is a selection BitMask where each bit represents an Enum value index. (Note this returned value is not itself an Enum).</para>
+        <para>The enum flags value modified by the user.</para>
       </returns>
     </member>
     <member name="M:UnityEditor.EditorGUI.EnumFlagsField(UnityEngine.Rect,UnityEngine.GUIContent,System.Enum)">
@@ -6719,7 +6719,7 @@ See Also: EditorBuildSettingsScene, EditorBuildSettings.scenes.</para>
       <param name="enumValue">Enum flags value (Only supports enum values for enum types with int as the underlying type).</param>
       <param name="style">Optional GUIStyle.</param>
       <returns>
-        <para>The enum flags value modified by the user. This is a selection BitMask where each bit represents an Enum value index. (Note this returned value is not itself an Enum).</para>
+        <para>The enum flags value modified by the user.</para>
       </returns>
     </member>
     <member name="M:UnityEditor.EditorGUI.EnumFlagsField(UnityEngine.Rect,UnityEngine.GUIContent,System.Enum,UnityEngine.GUIStyle)">
@@ -6731,7 +6731,7 @@ See Also: EditorBuildSettingsScene, EditorBuildSettings.scenes.</para>
       <param name="enumValue">Enum flags value (Only supports enum values for enum types with int as the underlying type).</param>
       <param name="style">Optional GUIStyle.</param>
       <returns>
-        <para>The enum flags value modified by the user. This is a selection BitMask where each bit represents an Enum value index. (Note this returned value is not itself an Enum).</para>
+        <para>The enum flags value modified by the user.</para>
       </returns>
     </member>
     <member name="M:UnityEditor.EditorGUI.EnumMaskField(UnityEngine.Rect,System.Enum)">
@@ -6745,7 +6745,7 @@ Make a field for enum based masks.</para>
       <param name="enumValue">Enum to use for the flags.</param>
       <param name="style">Optional GUIStyle.</param>
       <returns>
-        <para>A selection BitMask where each bit represents an Enum value index. (Note this returned value is not itself an Enum).</para>
+        <para>The value modified by the user.</para>
       </returns>
     </member>
     <member name="M:UnityEditor.EditorGUI.EnumMaskField(UnityEngine.Rect,System.String,System.Enum)">
@@ -6759,7 +6759,7 @@ Make a field for enum based masks.</para>
       <param name="enumValue">Enum to use for the flags.</param>
       <param name="style">Optional GUIStyle.</param>
       <returns>
-        <para>A selection BitMask where each bit represents an Enum value index. (Note this returned value is not itself an Enum).</para>
+        <para>The value modified by the user.</para>
       </returns>
     </member>
     <member name="M:UnityEditor.EditorGUI.EnumMaskField(UnityEngine.Rect,UnityEngine.GUIContent,System.Enum)">
@@ -6773,7 +6773,7 @@ Make a field for enum based masks.</para>
       <param name="enumValue">Enum to use for the flags.</param>
       <param name="style">Optional GUIStyle.</param>
       <returns>
-        <para>A selection BitMask where each bit represents an Enum value index. (Note this returned value is not itself an Enum).</para>
+        <para>The value modified by the user.</para>
       </returns>
     </member>
     <member name="M:UnityEditor.EditorGUI.EnumMaskField(UnityEngine.Rect,System.Enum,UnityEngine.GUIStyle)">
@@ -6787,7 +6787,7 @@ Make a field for enum based masks.</para>
       <param name="enumValue">Enum to use for the flags.</param>
       <param name="style">Optional GUIStyle.</param>
       <returns>
-        <para>A selection BitMask where each bit represents an Enum value index. (Note this returned value is not itself an Enum).</para>
+        <para>The value modified by the user.</para>
       </returns>
     </member>
     <member name="M:UnityEditor.EditorGUI.EnumMaskField(UnityEngine.Rect,System.String,System.Enum,UnityEngine.GUIStyle)">
@@ -6801,7 +6801,7 @@ Make a field for enum based masks.</para>
       <param name="enumValue">Enum to use for the flags.</param>
       <param name="style">Optional GUIStyle.</param>
       <returns>
-        <para>A selection BitMask where each bit represents an Enum value index. (Note this returned value is not itself an Enum).</para>
+        <para>The value modified by the user.</para>
       </returns>
     </member>
     <member name="M:UnityEditor.EditorGUI.EnumMaskField(UnityEngine.Rect,UnityEngine.GUIContent,System.Enum,UnityEngine.GUIStyle)">
@@ -6815,7 +6815,7 @@ Make a field for enum based masks.</para>
       <param name="enumValue">Enum to use for the flags.</param>
       <param name="style">Optional GUIStyle.</param>
       <returns>
-        <para>A selection BitMask where each bit represents an Enum value index. (Note this returned value is not itself an Enum).</para>
+        <para>The value modified by the user.</para>
       </returns>
     </member>
     <member name="M:UnityEditor.EditorGUI.EnumMaskPopup(UnityEngine.Rect,System.String,System.Enum)">
@@ -9832,7 +9832,7 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
 See Also: GUILayout.Width, GUILayout.Height, GUILayout.MinWidth, GUILayout.MaxWidth, GUILayout.MinHeight,
 GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
       <returns>
-        <para>The enum flags value modified by the user. This is a selection BitMask where each bit represents an Enum value index. (Note this returned value is not itself an Enum).</para>
+        <para>The enum flags value modified by the user.</para>
       </returns>
     </member>
     <member name="M:UnityEditor.EditorGUILayout.EnumFlagsField(System.Enum,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
@@ -9846,7 +9846,7 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
 See Also: GUILayout.Width, GUILayout.Height, GUILayout.MinWidth, GUILayout.MaxWidth, GUILayout.MinHeight,
 GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
       <returns>
-        <para>The enum flags value modified by the user. This is a selection BitMask where each bit represents an Enum value index. (Note this returned value is not itself an Enum).</para>
+        <para>The enum flags value modified by the user.</para>
       </returns>
     </member>
     <member name="M:UnityEditor.EditorGUILayout.EnumFlagsField(System.String,System.Enum,UnityEngine.GUILayoutOption[])">
@@ -9860,7 +9860,7 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
 See Also: GUILayout.Width, GUILayout.Height, GUILayout.MinWidth, GUILayout.MaxWidth, GUILayout.MinHeight,
 GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
       <returns>
-        <para>The enum flags value modified by the user. This is a selection BitMask where each bit represents an Enum value index. (Note this returned value is not itself an Enum).</para>
+        <para>The enum flags value modified by the user.</para>
       </returns>
     </member>
     <member name="M:UnityEditor.EditorGUILayout.EnumFlagsField(System.String,System.Enum,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
@@ -9874,7 +9874,7 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
 See Also: GUILayout.Width, GUILayout.Height, GUILayout.MinWidth, GUILayout.MaxWidth, GUILayout.MinHeight,
 GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
       <returns>
-        <para>The enum flags value modified by the user. This is a selection BitMask where each bit represents an Enum value index. (Note this returned value is not itself an Enum).</para>
+        <para>The enum flags value modified by the user.</para>
       </returns>
     </member>
     <member name="M:UnityEditor.EditorGUILayout.EnumFlagsField(UnityEngine.GUIContent,System.Enum,UnityEngine.GUILayoutOption[])">
@@ -9888,7 +9888,7 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
 See Also: GUILayout.Width, GUILayout.Height, GUILayout.MinWidth, GUILayout.MaxWidth, GUILayout.MinHeight,
 GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
       <returns>
-        <para>The enum flags value modified by the user. This is a selection BitMask where each bit represents an Enum value index. (Note this returned value is not itself an Enum).</para>
+        <para>The enum flags value modified by the user.</para>
       </returns>
     </member>
     <member name="M:UnityEditor.EditorGUILayout.EnumFlagsField(UnityEngine.GUIContent,System.Enum,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
@@ -9902,7 +9902,7 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
 See Also: GUILayout.Width, GUILayout.Height, GUILayout.MinWidth, GUILayout.MaxWidth, GUILayout.MinHeight,
 GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
       <returns>
-        <para>The enum flags value modified by the user. This is a selection BitMask where each bit represents an Enum value index. (Note this returned value is not itself an Enum).</para>
+        <para>The enum flags value modified by the user.</para>
       </returns>
     </member>
     <member name="M:UnityEditor.EditorGUILayout.EnumMaskField(UnityEngine.GUIContent,System.Enum,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])">
@@ -13684,7 +13684,7 @@ More information - https:msdn.microsoft.comen-uslibrary/dn584397(v=vs.110).aspx.
     </member>
     <member name="P:UnityEditor.EditorWindow.maximized">
       <summary>
-        <para>Is this window maximized?</para>
+        <para>Is this window maximized.</para>
       </summary>
     </member>
     <member name="P:UnityEditor.EditorWindow.maxSize">
@@ -13704,7 +13704,7 @@ More information - https:msdn.microsoft.comen-uslibrary/dn584397(v=vs.110).aspx.
     </member>
     <member name="P:UnityEditor.EditorWindow.position">
       <summary>
-        <para>The desired position of the window in screen space.</para>
+        <para>The position of the window in screen space.</para>
       </summary>
     </member>
     <member name="P:UnityEditor.EditorWindow.title">
@@ -13744,7 +13744,7 @@ More information - https:msdn.microsoft.comen-uslibrary/dn584397(v=vs.110).aspx.
     </member>
     <member name="M:UnityEditor.EditorWindow.Focus">
       <summary>
-        <para>Moves keyboard focus to another EditorWindow.</para>
+        <para>Moves keyboard focus to this EditorWindow.</para>
       </summary>
     </member>
     <member name="M:UnityEditor.EditorWindow.FocusWindowIfItsOpen(System.Type)">
@@ -15031,7 +15031,7 @@ If the Unity Editor setting "Auto-Update" is set to enabled, editing a script ou
       <summary>
         <para>Flood fills tiles and GameObjects starting from a given position within the selected layers.</para>
       </summary>
-      <param name="gridLayout">GridLayout used for layout.</param>
+      <param name="gridLayout"> used for layout.</param>
       <param name="brushTarget">Target of the flood fill operation. By default the currently selected GameObject.</param>
       <param name="position">Starting position of the flood fill.</param>
     </member>
@@ -18760,6 +18760,41 @@ GUILayout.MaxHeight, GUILayout.ExpandWidth, GUILayout.ExpandHeight.</param>
         <para>A light status bar, intended for use on dark backgrounds.</para>
       </summary>
     </member>
+    <member name="T:UnityEditor.iOSSystemGestureDeferMode">
+      <summary>
+        <para>Bit-mask used to control the deferring of system gestures on iOS.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEditor.iOSSystemGestureDeferMode.All">
+      <summary>
+        <para>Identifies all screen edges.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEditor.iOSSystemGestureDeferMode.BottomEdge">
+      <summary>
+        <para>Identifies bottom screen edge.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEditor.iOSSystemGestureDeferMode.LeftEdge">
+      <summary>
+        <para>Identifies left screen edge.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEditor.iOSSystemGestureDeferMode.None">
+      <summary>
+        <para>Disables gesture deferring on all edges.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEditor.iOSSystemGestureDeferMode.RightEdge">
+      <summary>
+        <para>Identifies right screen edge.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEditor.iOSSystemGestureDeferMode.TopEdge">
+      <summary>
+        <para>Identifies top screen edge.</para>
+      </summary>
+    </member>
     <member name="T:UnityEditor.iOSTargetDevice">
       <summary>
         <para>Target iOS device.</para>
@@ -21948,49 +21983,59 @@ If the target name is in the provided list of existing names, a unique name is g
         <para>Operation resulted in an unknown error.</para>
       </summary>
     </member>
+    <member name="T:UnityEditor.PackageManager.OriginType">
+      <summary>
+        <para>Type of origin path for packages.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEditor.PackageManager.OriginType.Path">
+      <summary>
+        <para>The value is the file system path or a gzip containing the package.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEditor.PackageManager.OriginType.Registry">
+      <summary>
+        <para>The value is the url of a registry.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEditor.PackageManager.OriginType.Unknown">
+      <summary>
+        <para>The type of the value is unknown.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEditor.PackageManager.OriginType.Url">
+      <summary>
+        <para>The value is the url of a folder or a gzip containing the package.</para>
+      </summary>
+    </member>
     <member name="T:UnityEditor.PackageManager.PackageCollection">
       <summary>
-        <para>A collection of PackageInfo objects.</para>
+        <para>A collection of UpmPackageInfo objects.</para>
       </summary>
     </member>
-    <member name="T:UnityEditor.PackageManager.PackageInfo">
+    <member name="T:UnityEditor.PackageManager.RelationType">
       <summary>
-        <para>Structure describing a Unity Package.</para>
+        <para>Type of package relation to a project.</para>
       </summary>
     </member>
-    <member name="P:UnityEditor.PackageManager.PackageInfo.category">
+    <member name="F:UnityEditor.PackageManager.RelationType.Excluded">
       <summary>
-        <para>Category of the package.</para>
+        <para>Denote a package excluded from the project.</para>
       </summary>
     </member>
-    <member name="P:UnityEditor.PackageManager.PackageInfo.description">
+    <member name="F:UnityEditor.PackageManager.RelationType.Internalized">
       <summary>
-        <para>Detailed description of the package.</para>
+        <para>Denote a package internalized in the project.</para>
       </summary>
     </member>
-    <member name="P:UnityEditor.PackageManager.PackageInfo.displayName">
+    <member name="F:UnityEditor.PackageManager.RelationType.ReadOnly">
       <summary>
-        <para>Friendly display name of the package.</para>
+        <para>Denote a  package referenced by the project as provided by the registry.</para>
       </summary>
     </member>
-    <member name="P:UnityEditor.PackageManager.PackageInfo.name">
+    <member name="F:UnityEditor.PackageManager.RelationType.Unknown">
       <summary>
-        <para>Unique name of the package.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEditor.PackageManager.PackageInfo.packageId">
-      <summary>
-        <para>Identifier of the package.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEditor.PackageManager.PackageInfo.resolvedPath">
-      <summary>
-        <para>The local path of the project on disk.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEditor.PackageManager.PackageInfo.version">
-      <summary>
-        <para>Version of the package.</para>
+        <para>Unknown relation type.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.PackageManager.Requests.AddRequest">
@@ -22076,6 +22121,66 @@ If the target name is in the provided list of existing names, a unique name is g
     <member name="F:UnityEditor.PackageManager.StatusCode.Success">
       <summary>
         <para>Package manager operation completed successfully.</para>
+      </summary>
+    </member>
+    <member name="T:UnityEditor.PackageManager.UpmPackageInfo">
+      <summary>
+        <para>Structure describing a Unity Package.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEditor.PackageManager.UpmPackageInfo.category">
+      <summary>
+        <para>Category of the package.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEditor.PackageManager.UpmPackageInfo.description">
+      <summary>
+        <para>Detailed description of the package.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEditor.PackageManager.UpmPackageInfo.displayName">
+      <summary>
+        <para>Friendly display name of the package.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEditor.PackageManager.UpmPackageInfo.name">
+      <summary>
+        <para>Unique name of the package.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEditor.PackageManager.UpmPackageInfo.originLocation">
+      <summary>
+        <para>Location of the source of the package.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEditor.PackageManager.UpmPackageInfo.originType">
+      <summary>
+        <para>Type of the origin path specified in originLocation.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEditor.PackageManager.UpmPackageInfo.packageId">
+      <summary>
+        <para>Identifier of the package.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEditor.PackageManager.UpmPackageInfo.relationType">
+      <summary>
+        <para>The relation of the package with the current project.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEditor.PackageManager.UpmPackageInfo.resolvedPath">
+      <summary>
+        <para>The local path of the project on disk.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEditor.PackageManager.UpmPackageInfo.tag">
+      <summary>
+        <para>Tag associated with the expected package revision.</para>
+      </summary>
+    </member>
+    <member name="P:UnityEditor.PackageManager.UpmPackageInfo.version">
+      <summary>
+        <para>Version of the package.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.PauseState">
@@ -22725,7 +22830,7 @@ See Also: PhysicsVisualizationSettings.</para>
     </member>
     <member name="P:UnityEditor.PlayerSettings.statusBarHidden">
       <summary>
-        <para>Returns if status bar should be hidden. Supported on iOS only; on Android, the status bar is always hidden.</para>
+        <para>Should status bar be hidden. Supported on iOS only; on Android, the status bar is always hidden.</para>
       </summary>
     </member>
     <member name="P:UnityEditor.PlayerSettings.stereoRenderingPath">
@@ -23173,11 +23278,6 @@ See Also: PhysicsVisualizationSettings.</para>
     <member name="P:UnityEditor.PlayerSettings.iOS.cameraUsageDescription">
       <summary>
         <para>Describes the reason for access to the user's camera.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEditor.PlayerSettings.iOS.deferSystemGesturesMode">
-      <summary>
-        <para>Defer system gestures until the second swipe on specific edges.</para>
       </summary>
     </member>
     <member name="P:UnityEditor.PlayerSettings.iOS.deferSystemGesturesMode">
@@ -24552,21 +24652,6 @@ Set this property to limit your application to only run on devices that support 
         <para>Set the lowest level of head tracking required to run your application.
 
 Set this property to limit your application to only run on devices that support this minimum level of head tracking.</para>
-      </summary>
-    </member>
-    <member name="T:UnityEditor.PlayerSettings.VROculus">
-      <summary>
-        <para>Class used to access properties of the Oculus VR device.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEditor.PlayerSettings.VROculus.dashSupport">
-      <summary>
-        <para>Enable Oculus Dash support for the application.</para>
-      </summary>
-    </member>
-    <member name="P:UnityEditor.PlayerSettings.VROculus.sharedDepthBuffer">
-      <summary>
-        <para>Enable Shared Depth Buffer support with Oculus.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.PlayerSettings.WebGL">
@@ -26972,12 +27057,6 @@ See Also:</para>
         <para>The material property found, otherwise null.</para>
       </returns>
     </member>
-    <member name="M:UnityEditor.ShaderGUI.OnClosed(UnityEngine.Material)">
-      <summary>
-        <para>This method is called when the ShaderGUI is being closed.</para>
-      </summary>
-      <param name="material"></param>
-    </member>
     <member name="M:UnityEditor.ShaderGUI.OnGUI(UnityEditor.MaterialEditor,UnityEditor.MaterialProperty[])">
       <summary>
         <para>To define a custom shader GUI use the methods of materialEditor to render controls for the properties array.</para>
@@ -27606,6 +27685,11 @@ See Also:</para>
         <para>Used to compute static occlusion culling data asynchronously.</para>
       </summary>
     </member>
+    <member name="M:UnityEditor.StaticOcclusionCulling.GenerateInBackground">
+      <summary>
+        <para>Used to compute static occlusion culling data asynchronously.</para>
+      </summary>
+    </member>
     <member name="T:UnityEditor.StaticOcclusionCullingVisualization">
       <summary>
         <para>Used to visualize static occlusion culling at development time in scene view.</para>
@@ -27653,14 +27737,11 @@ See Also:</para>
 See Also: AssetDatabase.IsOpenForEdit, AssetDatabase.IsMetaFileOpenForEdit.</para>
       </summary>
     </member>
-    <member name="F:UnityEditor.StatusQueryOptions.UseCachedAsync">
-      <summary>
-        <para>This option sets the status query to first use the latest valid version control system status of the file and query for a valid status asynchronously if otherwise.</para>
-      </summary>
-    </member>
     <member name="F:UnityEditor.StatusQueryOptions.UseCachedIfPossible">
       <summary>
-        <para>This option sets the status query to first use the latest valid version control system status of the file and query for a valid status synchronously if otherwise.</para>
+        <para>Use the last known version control system status of the file. This is faster on average but less accurate than forcing an update, as it will cache the status of the file for a period of time.
+
+See Also: AssetDatabase.IsOpenForEdit, AssetDatabase.IsMetaFileOpenForEdit.</para>
       </summary>
     </member>
     <member name="T:UnityEditor.StereoRenderingPath">
