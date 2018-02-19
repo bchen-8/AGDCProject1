@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void Update () {
-
+        rb.velocity = new Vector3(Input.GetAxis("Horizontal") * playerSpeed, 0, 0);
 	}
 
     private void FixedUpdate() {
