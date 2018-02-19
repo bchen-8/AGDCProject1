@@ -1,0 +1,725 @@
+fileFormatVersion: 2
+guid: c7c636e2de4cc7542a94ea45b62c97c9
+timeCreated: 1519079385
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 2DAPR Placeholder Sprites_0
+    21300002: 2DAPR Placeholder Sprites_1
+    21300004: 2DAPR Placeholder Sprites_2
+    21300006: 2DAPR Placeholder Sprites_3
+    21300008: 2DAPR Placeholder Sprites_4
+    21300010: 2DAPR Placeholder Sprites_5
+    21300012: 2DAPR Placeholder Sprites_6
+    21300014: 2DAPR Placeholder Sprites_7
+    21300016: 2DAPR Placeholder Sprites_8
+    21300018: 2DAPR Placeholder Sprites_9
+    21300020: 2DAPR Placeholder Sprites_10
+    21300022: 2DAPR Placeholder Sprites_11
+    21300024: 2DAPR Placeholder Sprites_12
+    21300026: 2DAPR Placeholder Sprites_13
+    21300028: 2DAPR Placeholder Sprites_14
+    21300030: 2DAPR Placeholder Sprites_15
+    21300032: 2DAPR Placeholder Sprites_16
+    21300034: 2DAPR Placeholder Sprites_17
+    21300036: 2DAPR Placeholder Sprites_18
+    21300038: 2DAPR Placeholder Sprites_19
+    21300040: 2DAPR Placeholder Sprites_20
+    21300042: 2DAPR Placeholder Sprites_21
+    21300044: 2DAPR Placeholder Sprites_22
+    21300046: 2DAPR Placeholder Sprites_23
+    21300048: 2DAPR Placeholder Sprites_24
+    21300050: 2DAPR Placeholder Sprites_25
+    21300052: 2DAPR Placeholder Sprites_26
+    21300054: 2DAPR Placeholder Sprites_27
+    21300056: 2DAPR Placeholder Sprites_28
+    21300058: 2DAPR Placeholder Sprites_29
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 206
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 206
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 206
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 206
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 206
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 206
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 206
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_7
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 206
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_8
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 206
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_9
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 206
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 156
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_11
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 156
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_12
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 156
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_13
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 156
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_14
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 156
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_15
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 156
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_16
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 156
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_17
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 156
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_18
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 156
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_19
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 156
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 106
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_21
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 106
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_22
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 106
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_23
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 106
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_24
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 106
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_25
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 106
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_26
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 106
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_27
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 106
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_28
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 106
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: 2DAPR Placeholder Sprites_29
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 106
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline:
+    - - {x: -241, y: 14}
+      - {x: -241, y: -14}
+      - {x: -222, y: -14}
+      - {x: -222, y: 14}
+    - - {x: -191, y: 14}
+      - {x: -191, y: -12}
+      - {x: -189, y: -14}
+      - {x: -174, y: -14}
+      - {x: -172, y: -12}
+      - {x: -172, y: 14}
+    - - {x: -141, y: 14}
+      - {x: -141, y: -12}
+      - {x: -139, y: -14}
+      - {x: -122, y: -14}
+      - {x: -122, y: 14}
+    - - {x: -91, y: 14}
+      - {x: -91, y: -14}
+      - {x: -74, y: -14}
+      - {x: -72, y: -13}
+      - {x: -72, y: 14}
+    - - {x: -41, y: 14}
+      - {x: -41, y: -14}
+      - {x: -22, y: -14}
+      - {x: -22, y: 14}
+    - - {x: 28, y: 14}
+      - {x: 9, y: 14}
+      - {x: 9, y: -12}
+      - {x: 11, y: -14}
+      - {x: 26, y: -14}
+      - {x: 28, y: -12}
+    - - {x: 59, y: 14}
+      - {x: 59, y: -12}
+      - {x: 61, y: -14}
+      - {x: 78, y: -14}
+      - {x: 78, y: 14}
+    - - {x: 109, y: 14}
+      - {x: 109, y: -14}
+      - {x: 128, y: -14}
+      - {x: 128, y: 14}
+    - - {x: 159, y: 5}
+      - {x: 159, y: -14}
+      - {x: 176, y: -14}
+      - {x: 178, y: -13}
+      - {x: 178, y: -9}
+      - {x: 162, y: 5}
+    - - {x: 209, y: -11}
+      - {x: 210, y: -14}
+      - {x: 214, y: -14}
+      - {x: 216, y: -12}
+      - {x: 215, y: -9}
+      - {x: 211, y: -9}
+    - - {x: 211, y: -8}
+      - {x: 214, y: -7}
+      - {x: 214, y: -4}
+      - {x: 211, y: -3}
+      - {x: 209, y: -5}
+    - - {x: 159, y: 14}
+      - {x: 159, y: 6}
+      - {x: 178, y: 6}
+      - {x: 178, y: 14}
+    - - {x: 209, y: 11}
+      - {x: 212, y: 8}
+      - {x: 213, y: 8}
+      - {x: 216, y: 11}
+      - {x: 215, y: 14}
+      - {x: 210, y: 14}
+    - - {x: 217, y: 14}
+      - {x: 216, y: 12}
+      - {x: 218, y: 9}
+      - {x: 224, y: 9}
+      - {x: 226, y: 11}
+      - {x: 225, y: 14}
+    - - {x: -241, y: 64}
+      - {x: -241, y: 36}
+      - {x: -222, y: 36}
+      - {x: -222, y: 64}
+    - - {x: -191, y: 36}
+      - {x: -172, y: 36}
+      - {x: -172, y: 64}
+      - {x: -191, y: 64}
+    - - {x: -141, y: 64}
+      - {x: -141, y: 36}
+      - {x: -122, y: 36}
+      - {x: -122, y: 64}
+    - - {x: -89, y: 64}
+      - {x: -91, y: 62}
+      - {x: -91, y: 38}
+      - {x: -89, y: 36}
+      - {x: -74, y: 36}
+      - {x: -72, y: 38}
+      - {x: -72, y: 62}
+      - {x: -74, y: 64}
+    - - {x: -39, y: 64}
+      - {x: -41, y: 62}
+      - {x: -41, y: 38}
+      - {x: -39, y: 36}
+      - {x: -24, y: 36}
+      - {x: -22, y: 38}
+      - {x: -22, y: 62}
+      - {x: -24, y: 64}
+    - - {x: 9, y: 64}
+      - {x: 9, y: 36}
+      - {x: 28, y: 36}
+      - {x: 28, y: 64}
+    - - {x: 59, y: 64}
+      - {x: 59, y: 36}
+      - {x: 78, y: 36}
+      - {x: 78, y: 64}
+    - - {x: 109, y: 64}
+      - {x: 109, y: 36}
+      - {x: 128, y: 36}
+      - {x: 128, y: 64}
+    - - {x: 159, y: 64}
+      - {x: 159, y: 36}
+      - {x: 178, y: 36}
+      - {x: 178, y: 64}
+    - - {x: 209, y: 64}
+      - {x: 209, y: 36}
+      - {x: 228, y: 36}
+      - {x: 228, y: 64}
+    - - {x: -241, y: 114}
+      - {x: -241, y: 86}
+      - {x: -222, y: 86}
+      - {x: -222, y: 114}
+    - - {x: -191, y: 86}
+      - {x: -172, y: 86}
+      - {x: -172, y: 114}
+      - {x: -191, y: 114}
+    - - {x: -141, y: 114}
+      - {x: -141, y: 86}
+      - {x: -122, y: 86}
+      - {x: -122, y: 114}
+    - - {x: -89, y: 114}
+      - {x: -91, y: 112}
+      - {x: -91, y: 88}
+      - {x: -89, y: 86}
+      - {x: -75, y: 86}
+      - {x: -72, y: 89}
+      - {x: -72, y: 112}
+      - {x: -74, y: 114}
+    - - {x: -39, y: 114}
+      - {x: -41, y: 112}
+      - {x: -41, y: 88}
+      - {x: -39, y: 86}
+      - {x: -24, y: 86}
+      - {x: -22, y: 88}
+      - {x: -22, y: 112}
+      - {x: -24, y: 114}
+    - - {x: 9, y: 114}
+      - {x: 9, y: 86}
+      - {x: 28, y: 86}
+      - {x: 28, y: 114}
+    - - {x: 59, y: 114}
+      - {x: 59, y: 86}
+      - {x: 78, y: 86}
+      - {x: 78, y: 114}
+    - - {x: 109, y: 114}
+      - {x: 109, y: 86}
+      - {x: 128, y: 86}
+      - {x: 128, y: 114}
+    - - {x: 159, y: 114}
+      - {x: 159, y: 86}
+      - {x: 178, y: 86}
+      - {x: 178, y: 114}
+    - - {x: 209, y: 114}
+      - {x: 209, y: 86}
+      - {x: 228, y: 86}
+      - {x: 228, y: 114}
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
