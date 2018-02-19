@@ -22,11 +22,14 @@ public class PlayerController : MonoBehaviour {
         bcol = GetComponent<BoxCollider2D>();
         rb = GetComponent<Rigidbody2D>();
 
-        //playerStats should be pulled from PlayerPrefs
+        //playerStats should be pulled from PlayerPrefs. Using temporary stats for now.
+        playerSpeed = 3;
 	}
 
 	void Update () {
-        rb.velocity = new Vector3(Input.GetAxis("Horizontal") * playerSpeed, 0, 0);
+
+        //Moving left and right
+        rb.velocity = new Vector3(Input.GetAxis("Horizontal") * playerSpeed, -2.7f, 0);
 	}
 
     private void FixedUpdate() {
