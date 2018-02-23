@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour {
 	private BoxCollider2D bcol;
 	private Rigidbody2D rb;
 	private SpriteRenderer sr;
-	public Attack1 attack1;
+	public GameObject attack1;
 
 	//Numbers
 	private int playerHealth;
@@ -39,6 +39,7 @@ public class PlayerController : MonoBehaviour {
 		bcol = GetComponent<BoxCollider2D>();
 		rb = GetComponent<Rigidbody2D>();
 		sr = GetComponent<SpriteRenderer>();
+        GameObject attack1 = GameObject.Find("Attack1");
 
 		//playerStats should be pulled from PlayerPrefs. Using temporary stats for now.
 		playerSpeed = 1.5f;
