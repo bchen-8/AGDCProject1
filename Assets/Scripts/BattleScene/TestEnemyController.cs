@@ -43,9 +43,17 @@ public class TestEnemyController : MonoBehaviour {
 
     }
 
-    public void Flinch(int damage)
+    public void Flinch(int damage, bool direction, Vector2 launch)
     {
         health -= damage;
+        if (direction == true)
+        {
+            launch.x = -launch.x;
+            rb.AddForce(launch);
+        } else
+        {
+            rb.AddForce(launch);
+        }
     }
 
     void Stun()

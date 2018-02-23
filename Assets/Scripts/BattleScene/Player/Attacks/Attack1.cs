@@ -11,6 +11,11 @@ public class Attack1 : MonoBehaviour {
     void Start () {
         bcol = GetComponent<BoxCollider2D>();
         sr = GetComponent<SpriteRenderer>();
+        if (sr.flipX == true)
+        {
+            bcol.offset = new Vector2(-0.06110305f, -0.02836919f);
+        }
+        Debug.Log(bcol.offset);
     }
 	
 	// Update is called once per frame
@@ -23,7 +28,7 @@ public class Attack1 : MonoBehaviour {
         if (other.gameObject.tag == "Enemy")
         {
             TestEnemyController otherScript = GameObject.FindWithTag("Enemy").GetComponent<TestEnemyController>();
-            otherScript.Flinch(10);
+            otherScript.Flinch(10, sr.flipX, new Vector2 (60, 60));
         }
     }
 
