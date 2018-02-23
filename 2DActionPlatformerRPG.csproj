@@ -289,7 +289,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BattleScene\MainBattle.cs" />
-    <Compile Include="Assets\Scripts\BattleScene\Player\Attack1.cs" />
+    <Compile Include="Assets\Scripts\BattleScene\Player\Attacks\Attack1.cs" />
     <Compile Include="Assets\Scripts\BattleScene\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\BattleScene\TestEnemyController.cs" />
   </ItemGroup>
