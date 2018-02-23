@@ -288,10 +288,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\MainBattle.cs" />
-    <Compile Include="Assets\Scripts\Player\Attack1.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\TestEnemyController.cs" />
+    <Compile Include="Assets\Scripts\BattleScene\MainBattle.cs" />
+    <Compile Include="Assets\Scripts\BattleScene\Player\Attack1.cs" />
+    <Compile Include="Assets\Scripts\BattleScene\Player\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\BattleScene\TestEnemyController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

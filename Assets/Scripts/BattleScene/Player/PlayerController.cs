@@ -9,8 +9,9 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody2D rb;
 
     private int playerHealth;
-    private int playerSpeed;
-    private int playerDamage;
+    private float playerSpeed;
+    private float playerJumpForce;
+    private float playerDamage;
 
     private bool onGround;
     private bool vulnerable = true;
@@ -23,13 +24,21 @@ public class PlayerController : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
 
         //playerStats should be pulled from PlayerPrefs. Using temporary stats for now.
-        playerSpeed = 3;
+        playerSpeed = 1.5f;
 	}
 
 	void Update () {
 
         //Moving left and right
-        rb.velocity = new Vector3(Input.GetAxis("Horizontal") * playerSpeed, -2.7f, 0);
+        var move = new Vector3(Input.GetAxis("Horizontal") * playerSpeed, 0, 0);
+        transform.position += move * playerSpeed * Time.deltaTime;
+
+        //Jumping
+        if (Input.GetKeyDown(KeyCode.W) && onGround == true)
+        {
+            rb.AddForce(new Vector3(0, playerJumpForce, 0));
+            anim.SetInteger("animState", 2);
+        }
 	}
 
     private void FixedUpdate() {
