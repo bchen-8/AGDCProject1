@@ -22,8 +22,8 @@ public class Attack1 : MonoBehaviour {
     {
         if (other.gameObject.tag == "Enemy")
         {
-            //get enemy's script component and call the function for dealing damage
-            //other.Flinch(10);
+            TestEnemyController otherScript = GameObject.FindWithTag("Enemy").GetComponent<TestEnemyController>();
+            otherScript.Flinch(10);
         }
     }
 

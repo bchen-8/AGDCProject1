@@ -7,6 +7,7 @@ public class TestEnemyController : MonoBehaviour {
     private Animator anim;
     private BoxCollider2D bcol;
     private Rigidbody2D rb;
+    private SpriteRenderer sr;
 
     private int health;
     private int damage;
@@ -16,13 +17,23 @@ public class TestEnemyController : MonoBehaviour {
 
     void Start () {
 
-	}
+        anim = GetComponent<Animator>();
+        bcol = GetComponent<BoxCollider2D>();
+        rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
 
-	void Update () {
+        anim.SetInteger("animState", 0);
+        health = 20;
+    }
 
-	}
-    
-    private void FixedUpdate()
+    void Update () {
+        if (health <= 0)
+        {
+            StartDying();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
 
     }
@@ -32,9 +43,9 @@ public class TestEnemyController : MonoBehaviour {
 
     }
 
-    void Flinch()
+    public void Flinch(int damage)
     {
-
+        health -= damage;
     }
 
     void Stun()
@@ -42,8 +53,13 @@ public class TestEnemyController : MonoBehaviour {
 
     }
 
-    void Death()
+    void StartDying()
     {
+        anim.SetInteger("animState", 9);
+    }
 
+    void FinishedDying()
+    {
+        Destroy(this.gameObject);
     }
 }
