@@ -10,7 +10,9 @@ public class PlayerController : MonoBehaviour {
 
     private int playerHealth;
     private float playerSpeed;
+    private float playerHopForce;
     private float playerJumpForce;
+    private float playerJumpCD;
     private float playerDamage;
 
     private bool onGround;
@@ -25,6 +27,8 @@ public class PlayerController : MonoBehaviour {
 
         //playerStats should be pulled from PlayerPrefs. Using temporary stats for now.
         playerSpeed = 1.5f;
+        playerHopForce = -50f;
+        playerJumpForce = 150f;
 	}
 
 	void Update () {
@@ -34,15 +38,34 @@ public class PlayerController : MonoBehaviour {
         transform.position += move * playerSpeed * Time.deltaTime;
 
         //Jumping
-        if (Input.GetKeyDown(KeyCode.W) && onGround == true)
+        /*if (Input.GetKeyDown(KeyCode.W) && onGround == true)
         {
             rb.AddForce(new Vector3(0, playerJumpForce, 0));
             anim.SetInteger("animState", 2);
+        }*/
+        if (Input.GetKeyDown(KeyCode.W) && onGround == true)
+        {
+            playerJumpCD = Time.time + 0.1f;
+            rb.AddForce(new Vector3(0, playerJumpForce, 0));
+            anim.SetInteger("animState", 2);
         }
-	}
+        if (Input.GetKeyUp(KeyCode.W) && playerJumpCD >= Time.time)
+        {
+            rb.AddForce(new Vector3(0, playerHopForce, 0));
+            Debug.Log("Hop");
+        }
+    }
 
     private void FixedUpdate() {
         
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Ground")
+        {
+            onGround = true;
+        }
     }
 
     void PlayerFlinch () {
