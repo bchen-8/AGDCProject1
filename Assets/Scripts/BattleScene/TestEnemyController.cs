@@ -27,24 +27,35 @@ public class TestEnemyController : MonoBehaviour {
         playerObj = GameObject.FindWithTag("Player");
 
         anim.SetInteger("animState", 0);
-        health = 50;
+        health = 30;
+        StartCoroutine(HopTowardsPlayer());
     }
 
-    void Update () {
+    void Update ()
+    {
         if (health <= 0)
         {
             StartDying();
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-
+        if (other.gameObject.tag == "Player")
+        {
+            PlayerController otherScript = other.gameObject.GetComponent<PlayerController>();
+            otherScript.PlayerFlinch(20, sr.flipX, new Vector2(60, 60));
+        }
     }
 
-    void Attack1()
+    IEnumerator HopTowardsPlayer()
     {
-
+        yield return new WaitForSeconds(Random.Range(1.5f, 2.0f));
+        if (playerObj.transform.position.x <= this.transform.position.x)
+            rb.AddForce(new Vector2(Random.Range(-60, -100), Random.Range(60, 150)));
+        if (playerObj.transform.position.x > this.transform.position.x)
+            rb.AddForce(new Vector2(Random.Range(60, 100), Random.Range(60, 150)));
+        StartCoroutine(HopTowardsPlayer());
     }
 
     public void Flinch(int damage, bool direction, Vector2 launch)

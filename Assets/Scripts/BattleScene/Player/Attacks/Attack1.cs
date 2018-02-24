@@ -15,7 +15,6 @@ public class Attack1 : MonoBehaviour {
         {
             bcol.offset = new Vector2(-0.06110305f, -0.02836919f);
         }
-        Debug.Log(bcol.offset);
     }
 	
 	// Update is called once per frame
