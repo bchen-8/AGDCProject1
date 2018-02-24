@@ -27,7 +27,7 @@ public class Attack1 : MonoBehaviour {
     {
         if (other.gameObject.tag == "Enemy")
         {
-            TestEnemyController otherScript = GameObject.FindWithTag("Enemy").GetComponent<TestEnemyController>();
+            TestEnemyController otherScript = other.GetComponent<TestEnemyController>();
             otherScript.Flinch(10, sr.flipX, new Vector2 (60, 60));
         }
     }

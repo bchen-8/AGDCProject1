@@ -9,6 +9,8 @@ public class TestEnemyController : MonoBehaviour {
     private Rigidbody2D rb;
     private SpriteRenderer sr;
 
+    public GameObject playerObj;
+
     private int health;
     private int damage;
 
@@ -22,8 +24,10 @@ public class TestEnemyController : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
 
+        playerObj = GameObject.FindWithTag("Player");
+
         anim.SetInteger("animState", 0);
-        health = 20;
+        health = 50;
     }
 
     void Update () {

@@ -9,7 +9,9 @@ public class PlayerController : MonoBehaviour {
 	private BoxCollider2D bcol;
 	private Rigidbody2D rb;
 	private SpriteRenderer sr;
+    private GameObject playerObj;
 	public GameObject attack1;
+    public SpriteRenderer attack1sr;
 
 	//Numbers
 	private int playerHealth;
@@ -29,6 +31,7 @@ public class PlayerController : MonoBehaviour {
 	//Bools
 	private bool onGround;
 	private bool isFalling;
+    private bool isFlinching = false;
 	private bool vulnerable = true;
 	private bool doubleJumped = false;
 	private bool dodgeRolling = false;
@@ -39,9 +42,10 @@ public class PlayerController : MonoBehaviour {
 		bcol = GetComponent<BoxCollider2D>();
 		rb = GetComponent<Rigidbody2D>();
 		sr = GetComponent<SpriteRenderer>();
-        GameObject attack1 = GameObject.Find("Attack1");
+        playerObj = this.gameObject;
 
-		//playerStats should be pulled from PlayerPrefs. Using temporary stats for now.
+        //playerStats should be pulled from PlayerPrefs. Using temporary stats for now.
+        playerHealth = 100;
 		playerSpeed = 1.5f;
 		playerHopForce = -60f;
 		playerJumpForce = 180f;
@@ -101,16 +105,16 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.J) && attack1CD <= Time.time)
 		{
 			attack1CD = Time.time + 0.17f;
-			SpriteRenderer attack1sr = attack1.GetComponent<SpriteRenderer>();
-			attack1sr.flipX = sr.flipX;
+            attack1sr = attack1.GetComponent<SpriteRenderer>();
+            attack1sr.flipX = sr.flipX;
 			if (sr.flipX == true)
 			{
-				var Attack1 = Instantiate(attack1, transform);
+				GameObject Attack1 = Instantiate(attack1, transform);
 				Attack1.transform.parent = transform;
 				Attack1.transform.position = new Vector3 (transform.position.x - 0.18f, transform.position.y, transform.position.z);
 			} else
 			{
-				var Attack1 = Instantiate(attack1, transform);
+                GameObject Attack1 = Instantiate(attack1, transform);
 				Attack1.transform.parent = transform;
 				Attack1.transform.position = new Vector3 (transform.position.x + 0.18f, transform.position.y, transform.position.z);
 			}
@@ -135,15 +139,35 @@ public class PlayerController : MonoBehaviour {
 			onGround = false;
 	}
 
-	public void PlayerFlinch (int damage) {
+    public void PlayerFlinch(int damage, bool direction, Vector2 launch)
+    {
+        playerHealth -= damage;
+        if (playerHealth > 0)
+        {
+            isFlinching = true;
+            anim.SetInteger("animState", 4);
+            if (direction == true)
+            {
+                launch.x = -launch.x;
+                rb.AddForce(launch);
+            }
+            else
+            {
+                rb.AddForce(launch);
+            }
+        }
+    }
 
-	}
-
-	public void PlayerStun (int duration) {
+    public void PlayerStun (int duration) {
 
 	}
 
 	void PlayerDeath () {
-
+        anim.SetInteger("animState", 9);
 	}
+
+    void FinishedDying()
+    {
+        playerObj.SetActive(false);
+    }
 }
