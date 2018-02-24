@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour {
 	//Numbers
 	private int playerHealth;
 	private float playerSpeed;
+    private float dodgeRollCD;
+    private float dodgeRollStrength;
 
 	private float playerHopForce;
 	private float playerJumpForce;
@@ -34,7 +36,6 @@ public class PlayerController : MonoBehaviour {
     private bool isFlinching = false;
 	private bool vulnerable = true;
 	private bool doubleJumped = false;
-	private bool dodgeRolling = false;
 
 	void Start () {
 		//Component Getters
@@ -47,6 +48,7 @@ public class PlayerController : MonoBehaviour {
         //playerStats should be pulled from PlayerPrefs. Using temporary stats for now.
         playerHealth = 100;
 		playerSpeed = 1.5f;
+        dodgeRollStrength = 125f;
 		playerHopForce = -60f;
 		playerJumpForce = 180f;
 	}
@@ -82,26 +84,6 @@ public class PlayerController : MonoBehaviour {
                 rb.AddForce(new Vector3(0, playerHopForce, 0));
             }
 
-            //Detect falling status
-            xCoord2 = transform.position.x;
-            yCoord2 = transform.position.y;
-            if (xCoord2 == xCoord1 && yCoord2 == yCoord1 && onGround == true)
-            {
-                anim.SetInteger("animState", 0);
-            }
-            if (yCoord2 - yCoord1 < 0 && onGround == false)
-            {
-                isFalling = true;
-                rb.AddForce(new Vector3(0, -0.0001f, 0));
-                anim.SetInteger("animState", 3);
-            }
-            if (yCoord2 - yCoord1 >= 0)
-            {
-                isFalling = false;
-            }
-            xCoord1 = xCoord2;
-            yCoord1 = yCoord2;
-
             //One attack
             if (Input.GetKeyDown(KeyCode.J) && attack1CD <= Time.time)
             {
@@ -121,6 +103,41 @@ public class PlayerController : MonoBehaviour {
                     Attack1.transform.position = new Vector3(transform.position.x + 0.18f, transform.position.y, transform.position.z);
                 }
             }
+
+            //Dodge-roll, needs animation/animstates
+            if (Input.GetKeyDown(KeyCode.Space) && dodgeRollCD <= Time.time)
+            {
+                dodgeRollCD = Time.time + 1f;
+                StartCoroutine(Invuln(0.35f));
+                if (sr.flipX == true)
+                {
+                    rb.AddForce(new Vector3(-dodgeRollStrength, 0, 0));
+                }
+                else
+                {
+                    rb.AddForce(new Vector3(dodgeRollStrength, 0, 0));
+                }
+            }
+
+            //Detect falling status
+            xCoord2 = transform.position.x;
+            yCoord2 = transform.position.y;
+            if (xCoord2 == xCoord1 && yCoord2 == yCoord1 && onGround == true)
+            {
+                anim.SetInteger("animState", 0);
+            }
+            if (yCoord2 - yCoord1 < 0 && onGround == false)
+            {
+                isFalling = true;
+                rb.AddForce(new Vector3(0, -0.0001f, 0));
+                anim.SetInteger("animState", 3);
+            }
+            if (yCoord2 - yCoord1 >= 0)
+            {
+                isFalling = false;
+            }
+            xCoord1 = xCoord2;
+            yCoord1 = yCoord2;
         }
 		
 		//Player Health check
@@ -143,8 +160,7 @@ public class PlayerController : MonoBehaviour {
 			onGround = false;
 	}
 
-
-    IEnumerator Invuln(int duration)
+    IEnumerator Invuln(float duration)
     {
         vulnerable = false;
         sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 0.5f);
