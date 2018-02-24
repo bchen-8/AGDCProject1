@@ -144,21 +144,20 @@ public class PlayerController : MonoBehaviour {
 	}
 
 
-    IEnumerator Invuln()
+    IEnumerator Invuln(int duration)
     {
-        Debug.Log("Starting Invuln Coroutine");
         vulnerable = false;
-        Debug.Log(vulnerable);
-        yield return new WaitForSeconds(3);
+        sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 0.5f);
+        yield return new WaitForSeconds(duration);
         vulnerable = true;
-        Debug.Log("Finished Invuln Coroutine, vulnerable = "+vulnerable);
+        sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 1f);
     }
 
     public void PlayerFlinch(int damage, bool direction, Vector2 launch)
     {
         if (vulnerable == true)
         {
-            StartCoroutine(Invuln());
+            StartCoroutine(Invuln(3));
             playerHealth -= damage;
             Debug.Log("Player Health: "+playerHealth);
             if (playerHealth > 0)
