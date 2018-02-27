@@ -14,13 +14,14 @@ public class PlayerController : MonoBehaviour {
     public SpriteRenderer attack1sr;
 
 	//Numbers
-	private int playerHealth;
-	private float playerSpeed;
-    private float dodgeRollCD;
-    private float dodgeRollStrength;
+	public int playerHealth;
+	public float playerSpeed;
+    private float dodgeRollTimer;
+    public float dodgeRollCD;
+    public float dodgeRollStrength;
 
-	private float playerHopForce;
-	private float playerJumpForce;
+	public float playerHopForce;
+	public float playerJumpForce;
 	private float playerJumpCD;
 
 	private float xCoord1;
@@ -34,7 +35,7 @@ public class PlayerController : MonoBehaviour {
 	private bool onGround;
 	private bool isFalling;
     private bool isFlinching = false;
-	private bool vulnerable = true;
+	public bool vulnerable = true;
 	private bool doubleJumped = false;
 
 	void Start () {
@@ -48,12 +49,14 @@ public class PlayerController : MonoBehaviour {
         //playerStats should be pulled from PlayerPrefs. Using temporary stats for now.
         playerHealth = 100;
 		playerSpeed = 1.5f;
+        dodgeRollCD = 1f;
         dodgeRollStrength = 125f;
 		playerHopForce = -60f;
 		playerJumpForce = 180f;
-	}
+        //playerStats should be pulled from PlayerPrefs. Using temporary stats for now.
+    }
 
-	void Update () {
+    void Update () {
         if (!isFlinching && playerHealth > 0)
         {
             //Moving left and right
@@ -105,9 +108,9 @@ public class PlayerController : MonoBehaviour {
             }
 
             //Dodge-roll, needs animation/animstates
-            if (Input.GetKeyDown(KeyCode.Space) && dodgeRollCD <= Time.time)
+            if (Input.GetKeyDown(KeyCode.Space) && dodgeRollTimer <= Time.time)
             {
-                dodgeRollCD = Time.time + 1f;
+                dodgeRollTimer = Time.time + dodgeRollCD;
                 StartCoroutine(Invuln(0.35f));
                 if (sr.flipX == true)
                 {
@@ -150,9 +153,11 @@ public class PlayerController : MonoBehaviour {
 	private void OnCollisionEnter2D(Collision2D other)
 	{
 		if (other.gameObject.tag == "Ground")
-			onGround = true;
+        {
+            onGround = true;
             isFlinching = false;
-	}
+        }
+    }
 
 	private void OnCollisionExit2D(Collision2D other)
 	{
@@ -173,7 +178,7 @@ public class PlayerController : MonoBehaviour {
     {
         if (vulnerable == true)
         {
-            StartCoroutine(Invuln(3));
+            StartCoroutine(Invuln(2.5f));
             playerHealth -= damage;
             Debug.Log("Player Health: "+playerHealth);
             if (playerHealth > 0)

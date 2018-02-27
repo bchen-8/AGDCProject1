@@ -44,7 +44,8 @@ public class TestEnemyController : MonoBehaviour {
         if (other.gameObject.tag == "Player")
         {
             PlayerController otherScript = other.gameObject.GetComponent<PlayerController>();
-            otherScript.PlayerFlinch(20, sr.flipX, new Vector2(60, 60));
+            if (otherScript.vulnerable == true)
+                otherScript.PlayerFlinch(20, sr.flipX, new Vector2(60, 60));
         }
     }
 
