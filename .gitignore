@@ -35,3 +35,4 @@ sysinfo.txt
 *.unitypackage
 .vs/2DActionPlatformerRPG/v15/.suo
 .vs/2DActionPlatformerRPG/v15/.suo
+*.ide
