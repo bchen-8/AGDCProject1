@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 2a540675ff3cbc642b2407f381898bcf
-timeCreated: 1523725261
+guid: 04bcc0007870ffb418198af5fe9ff460
+timeCreated: 1523736933
 licenseType: Pro
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: JumpFallFlinch_0
+    21300002: JumpFallFlinch_1
+    21300004: JumpFallFlinch_2
+    21300006: JumpFallFlinch_3
+    21300008: JumpFallFlinch_4
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -98,7 +103,77 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: JumpFallFlinch_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 206
+        width: 62
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpFallFlinch_1
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 210
+        width: 68
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpFallFlinch_2
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 203
+        width: 71
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpFallFlinch_3
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 107
+        width: 66
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JumpFallFlinch_4
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 4
+        width: 66
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 

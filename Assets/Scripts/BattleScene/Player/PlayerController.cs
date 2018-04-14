@@ -62,7 +62,10 @@ public class PlayerController : MonoBehaviour {
         {
             //Moving left and right
             var move = new Vector3(Input.GetAxis("Horizontal") * playerSpeed, 0, 0);
-            transform.position += move * playerSpeed * Time.deltaTime;
+            if (isAttacking == false)
+            {
+                transform.position += move * playerSpeed * Time.deltaTime;
+            }
             if (Input.GetKeyDown(KeyCode.A) && onGround == true)
             {
                 rb.AddForce(new Vector3(-0.0001f, 0, 0));
@@ -93,18 +96,19 @@ public class PlayerController : MonoBehaviour {
             {
                 attack1CD = Time.time + 0.25f;
                 isAttacking = true;
+                anim.SetBool("isAttacking", true);
                 anim.SetInteger("animState", 10);
                 if (sr.flipX == true)
                 {
                     GameObject Attack1 = Instantiate(attack1, transform);
                     Attack1.transform.parent = transform;
-                    Attack1.transform.position = new Vector3(transform.position.x - 0.124203f, transform.position.y, transform.position.z);
+                    Attack1.transform.position = new Vector3(transform.position.x - 0.32f, transform.position.y - 0.02f, transform.position.z);
                 }
                 else
                 {
                     GameObject Attack1 = Instantiate(attack1, transform);
                     Attack1.transform.parent = transform;
-                    Attack1.transform.position = new Vector3(transform.position.x + 0.124203f, transform.position.y, transform.position.z);
+                    Attack1.transform.position = new Vector3(transform.position.x + 0.32f, transform.position.y - 0.02f, transform.position.z);
                 }
             }
 
@@ -126,7 +130,7 @@ public class PlayerController : MonoBehaviour {
             //Detect falling status
             xCoord2 = transform.position.x;
             yCoord2 = transform.position.y;
-            if (xCoord2 == xCoord1 && yCoord2 == yCoord1 && onGround == true)
+            if (xCoord2 == xCoord1 && yCoord2 == yCoord1 && onGround == true && isAttacking == false)
             {
                 anim.SetInteger("animState", 0);
             }
@@ -177,6 +181,11 @@ public class PlayerController : MonoBehaviour {
 
     public void FinishedAttacking()
     {
+        anim.SetBool("isAttacking", false);
+        foreach (Transform child in transform)
+        {
+            GameObject.Destroy(child.gameObject);
+        }
         isAttacking = false;
     }
 

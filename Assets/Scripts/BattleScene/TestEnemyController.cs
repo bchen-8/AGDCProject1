@@ -55,12 +55,12 @@ public class TestEnemyController : MonoBehaviour {
         if (playerObj.transform.position.x <= this.transform.position.x)
         {
             rb.AddForce(new Vector2(Random.Range(-60, -100), Random.Range(60, 150)));
-            sr.flipX = true;
+            sr.flipX = false;
         }
         if (playerObj.transform.position.x > this.transform.position.x)
         {
             rb.AddForce(new Vector2(Random.Range(60, 100), Random.Range(60, 150)));
-            sr.flipX = false;
+            sr.flipX = true;
         }
         StartCoroutine(HopTowardsPlayer());
     }

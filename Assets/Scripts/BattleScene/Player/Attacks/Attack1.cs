@@ -6,15 +6,16 @@ public class Attack1 : MonoBehaviour {
 
     private BoxCollider2D bcol;
     PlayerController playerCont;
-    private SpriteRenderer sr;
+    //private SpriteRenderer sr;
 
     void Start () {
         bcol = GetComponent<BoxCollider2D>();
-        sr = GetComponent<SpriteRenderer>();
-        if (sr.flipX == true)
+        //sr = GetComponent<SpriteRenderer>();
+        playerCont = GameObject.Find("Player").GetComponent<PlayerController>();
+        /*if (sr.flipX == true)
         {
             bcol.offset = new Vector2(-0.06110305f, -0.02836919f);
-        }
+        }*/
     }
 	
 	void Update () {
@@ -25,7 +26,6 @@ public class Attack1 : MonoBehaviour {
     {
         if (other.gameObject.tag == "Enemy")
         {
-            Debug.Log("CONTACT!");
             TestEnemyController otherScript = other.GetComponent<TestEnemyController>();
             otherScript.Flinch(10, playerCont.sr.flipX, new Vector2 (80, 80));
         }
