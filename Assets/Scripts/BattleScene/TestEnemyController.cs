@@ -27,7 +27,7 @@ public class TestEnemyController : MonoBehaviour {
         playerObj = GameObject.FindWithTag("Player");
 
         anim.SetInteger("animState", 0);
-        health = 30;
+        health = 100;
         StartCoroutine(HopTowardsPlayer());
     }
 
@@ -46,6 +46,10 @@ public class TestEnemyController : MonoBehaviour {
             PlayerController otherScript = other.gameObject.GetComponent<PlayerController>();
             if (otherScript.vulnerable == true)
                 otherScript.PlayerFlinch(20, sr.flipX, new Vector2(60, 60));
+        }
+        if (other.gameObject.tag == "Ground")
+        {
+            anim.SetInteger("animState", 0);
         }
     }
 
@@ -67,6 +71,7 @@ public class TestEnemyController : MonoBehaviour {
 
     public void Flinch(int damage, bool direction, Vector2 launch)
     {
+        anim.SetInteger("animState", 1);
         health -= damage;
         if (direction == true)
         {
