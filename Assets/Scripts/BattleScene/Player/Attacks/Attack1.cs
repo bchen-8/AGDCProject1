@@ -5,9 +5,9 @@ using UnityEngine;
 public class Attack1 : MonoBehaviour {
 
     private BoxCollider2D bcol;
+    PlayerController playerCont;
     private SpriteRenderer sr;
 
-    // Use this for initialization
     void Start () {
         bcol = GetComponent<BoxCollider2D>();
         sr = GetComponent<SpriteRenderer>();
@@ -17,7 +17,6 @@ public class Attack1 : MonoBehaviour {
         }
     }
 	
-	// Update is called once per frame
 	void Update () {
 		
 	}
@@ -26,8 +25,9 @@ public class Attack1 : MonoBehaviour {
     {
         if (other.gameObject.tag == "Enemy")
         {
+            Debug.Log("CONTACT!");
             TestEnemyController otherScript = other.GetComponent<TestEnemyController>();
-            otherScript.Flinch(10, sr.flipX, new Vector2 (80, 80));
+            otherScript.Flinch(10, playerCont.sr.flipX, new Vector2 (80, 80));
         }
     }
 

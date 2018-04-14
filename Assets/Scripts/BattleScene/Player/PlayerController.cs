@@ -8,10 +8,10 @@ public class PlayerController : MonoBehaviour {
 	private Animator anim;
 	private BoxCollider2D bcol;
 	private Rigidbody2D rb;
-	private SpriteRenderer sr;
+	public SpriteRenderer sr;
     private GameObject playerObj;
 	public GameObject attack1;
-    public SpriteRenderer attack1sr;
+    //public SpriteRenderer attack1sr;
 
 	//Numbers
 	public int playerHealth;
@@ -35,6 +35,7 @@ public class PlayerController : MonoBehaviour {
 	private bool onGround;
 	private bool isFalling;
     private bool isFlinching = false;
+    private bool isAttacking = false;
 	public bool vulnerable = true;
 	private bool doubleJumped = false;
 
@@ -90,20 +91,20 @@ public class PlayerController : MonoBehaviour {
             //One attack
             if (Input.GetKeyDown(KeyCode.J) && attack1CD <= Time.time)
             {
-                attack1CD = Time.time + 0.17f;
-                attack1sr = attack1.GetComponent<SpriteRenderer>();
-                attack1sr.flipX = sr.flipX;
+                attack1CD = Time.time + 0.25f;
+                isAttacking = true;
+                anim.SetInteger("animState", 10);
                 if (sr.flipX == true)
                 {
                     GameObject Attack1 = Instantiate(attack1, transform);
                     Attack1.transform.parent = transform;
-                    Attack1.transform.position = new Vector3(transform.position.x - 0.18f, transform.position.y, transform.position.z);
+                    Attack1.transform.position = new Vector3(transform.position.x - 0.124203f, transform.position.y, transform.position.z);
                 }
                 else
                 {
                     GameObject Attack1 = Instantiate(attack1, transform);
                     Attack1.transform.parent = transform;
-                    Attack1.transform.position = new Vector3(transform.position.x + 0.18f, transform.position.y, transform.position.z);
+                    Attack1.transform.position = new Vector3(transform.position.x + 0.124203f, transform.position.y, transform.position.z);
                 }
             }
 
@@ -174,8 +175,14 @@ public class PlayerController : MonoBehaviour {
         sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 1f);
     }
 
+    public void FinishedAttacking()
+    {
+        isAttacking = false;
+    }
+
     public void PlayerFlinch(int damage, bool direction, Vector2 launch)
     {
+        isAttacking = false;
         if (vulnerable == true)
         {
             StartCoroutine(Invuln(2.5f));
