@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour {
             }
 
             //Jumping/Hopping
-            if (Input.GetKeyDown(KeyCode.W) && onGround == true)
+            if (Input.GetKeyDown(KeyCode.W) && onGround == true && isAttacking == false)
             {
                 playerJumpCD = Time.time + 0.1f;
                 rb.AddForce(new Vector3(0, playerJumpForce, 0));
@@ -110,6 +110,12 @@ public class PlayerController : MonoBehaviour {
                     Attack1.transform.parent = transform;
                     Attack1.transform.position = new Vector3(transform.position.x + 0.32f, transform.position.y - 0.02f, transform.position.z);
                 }
+            }
+
+            //Attack Check
+            if (attack1CD <= Time.time)
+            {
+                isAttacking = false;
             }
 
             //Dodge-roll, needs animation/animstates
