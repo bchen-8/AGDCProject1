@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TestEnemyController : MonoBehaviour {
 
@@ -27,7 +28,7 @@ public class TestEnemyController : MonoBehaviour {
         playerObj = GameObject.FindWithTag("Player");
 
         anim.SetInteger("animState", 0);
-        health = 100;
+        health = 40;
         StartCoroutine(HopTowardsPlayer());
     }
 
@@ -95,6 +96,8 @@ public class TestEnemyController : MonoBehaviour {
 
     void FinishedDying()
     {
+        PlayerPrefs.SetInt("Enemy1", 1);
+        SceneManager.LoadScene("Working proto");
         Destroy(this.gameObject);
     }
 }

@@ -1,0 +1,568 @@
+fileFormatVersion: 2
+guid: e6c2a2faef10a39499171ef270d22261
+timeCreated: 1523830624
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: zm5603p8_0
+    21300002: zm5603p8_1
+    21300004: zm5603p8_2
+    21300006: zm5603p8_3
+    21300008: zm5603p8_4
+    21300010: zm5603p8_5
+    21300012: zm5603p8_6
+    21300014: zm5603p8_7
+    21300016: zm5603p8_8
+    21300018: zm5603p8_9
+    21300020: zm5603p8_10
+    21300022: zm5603p8_11
+    21300024: zm5603p8_12
+    21300026: zm5603p8_13
+    21300028: zm5603p8_14
+    21300030: zm5603p8_15
+    21300032: zm5603p8_16
+    21300034: zm5603p8_17
+    21300036: zm5603p8_18
+    21300038: zm5603p8_19
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 57
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 512
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 512
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: zm5603p8_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 204
+        width: 36
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zm5603p8_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 205
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zm5603p8_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 202
+        width: 36
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zm5603p8_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 204
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zm5603p8_4
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 203
+        width: 36
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zm5603p8_5
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 143
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zm5603p8_6
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 141
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zm5603p8_7
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 143
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zm5603p8_8
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 142
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zm5603p8_9
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 143
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zm5603p8_10
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 76
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zm5603p8_11
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 76
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zm5603p8_12
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 80
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zm5603p8_13
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 78
+        width: 36
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zm5603p8_14
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 79
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zm5603p8_15
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 12
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zm5603p8_16
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 11
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zm5603p8_17
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 12
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zm5603p8_18
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 11
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: zm5603p8_19
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 12
+        width: 30
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline:
+    - - {x: -60, y: -65.5}
+      - {x: -76, y: -65.5}
+      - {x: -84, y: -73.5}
+      - {x: -84, y: -97.5}
+      - {x: -77, y: -122.5}
+      - {x: -52, y: -122.5}
+      - {x: -50, y: -112.5}
+      - {x: -50, y: -69.5}
+      - {x: -57, y: -66.5}
+    - - {x: -3, y: -65.5}
+      - {x: -5, y: -67.5}
+      - {x: -5, y: -96.5}
+      - {x: 0, y: -118.5}
+      - {x: 3, y: -122.5}
+      - {x: 23, y: -122.5}
+      - {x: 29, y: -116.5}
+      - {x: 29, y: -65.5}
+    - - {x: -96, y: -63.5}
+      - {x: -122, y: -63.5}
+      - {x: -128, y: -67.5}
+      - {x: -128, y: -103.5}
+      - {x: -121, y: -119.5}
+      - {x: -117, y: -121.5}
+      - {x: -108, y: -121.5}
+      - {x: -102, y: -120.5}
+      - {x: -97, y: -116.5}
+      - {x: -94, y: -90.5}
+      - {x: -94, y: -65.5}
+    - - {x: -10, y: -73.5}
+      - {x: -17, y: -65.5}
+      - {x: -19, y: -64.5}
+      - {x: -36, y: -64.5}
+      - {x: -44, y: -72.5}
+      - {x: -44, y: -95.5}
+      - {x: -38, y: -120.5}
+      - {x: -34, y: -121.5}
+      - {x: -21, y: -121.5}
+      - {x: -15, y: -115.5}
+      - {x: -15, y: -113.5}
+      - {x: -10, y: -85.5}
+    - - {x: 44, y: -66.5}
+      - {x: 36, y: -70.5}
+      - {x: 36, y: -92.5}
+      - {x: 43, y: -112.5}
+      - {x: 47, y: -119.5}
+      - {x: 49, y: -121.5}
+      - {x: 67, y: -121.5}
+      - {x: 70, y: -104.5}
+      - {x: 70, y: -66.5}
+    - - {x: -92, y: 0.5}
+      - {x: -125, y: 0.5}
+      - {x: -127, y: -0.5}
+      - {x: -127, y: -46.5}
+      - {x: -119, y: -56.5}
+      - {x: -118, y: -57.5}
+      - {x: -95, y: -57.5}
+      - {x: -88, y: -43.5}
+      - {x: -87, y: -39.5}
+      - {x: -87, y: -1.5}
+    - - {x: -67, y: 0.5}
+      - {x: -73, y: -7.5}
+      - {x: -73, y: -39.5}
+      - {x: -64, y: -57.5}
+      - {x: -39, y: -57.5}
+      - {x: -33, y: -45.5}
+      - {x: -33, y: -2.5}
+      - {x: -39, y: 0.5}
+    - - {x: 30, y: 2.5}
+      - {x: 22, y: -4.5}
+      - {x: 22, y: -36.5}
+      - {x: 23, y: -41.5}
+      - {x: 39, y: -55.5}
+      - {x: 58, y: -55.5}
+      - {x: 62, y: -45.5}
+      - {x: 62, y: -4.5}
+      - {x: 55, y: 2.5}
+    - - {x: 80, y: 0.5}
+      - {x: 74, y: -0.5}
+      - {x: 74, y: -48.5}
+      - {x: 78, y: -54.5}
+      - {x: 108, y: -54.5}
+      - {x: 114, y: -52.5}
+      - {x: 114, y: -2.5}
+      - {x: 108, y: 0.5}
+    - - {x: -22, y: 1.5}
+      - {x: -25, y: 0.5}
+      - {x: -25, y: -46.5}
+      - {x: -15, y: -53.5}
+      - {x: -2, y: -53.5}
+      - {x: 2, y: -52.5}
+      - {x: 15, y: -44.5}
+      - {x: 15, y: -0.5}
+      - {x: 7, y: 1.5}
+    - - {x: -85, y: 64.5}
+      - {x: -85, y: 9.5}
+      - {x: -79, y: 7.5}
+      - {x: -51, y: 7.5}
+      - {x: -51, y: 64.5}
+    - - {x: -3, y: 17.5}
+      - {x: -2, y: 8.5}
+      - {x: 26, y: 8.5}
+      - {x: 31, y: 17.5}
+      - {x: 31, y: 63.5}
+      - {x: 30, y: 65.5}
+      - {x: 5, y: 65.5}
+      - {x: -3, y: 59.5}
+    - - {x: -96, y: 64.5}
+      - {x: -123, y: 64.5}
+      - {x: -123, y: 26.5}
+      - {x: -116, y: 9.5}
+      - {x: -101, y: 9.5}
+      - {x: -95, y: 17.5}
+      - {x: -89, y: 35.5}
+      - {x: -89, y: 60.5}
+    - - {x: -38, y: 66.5}
+      - {x: -43, y: 60.5}
+      - {x: -43, y: 35.5}
+      - {x: -38, y: 10.5}
+      - {x: -35, y: 9.5}
+      - {x: -21, y: 9.5}
+      - {x: -17, y: 10.5}
+      - {x: -9, y: 36.5}
+      - {x: -9, y: 62.5}
+      - {x: -17, y: 66.5}
+    - - {x: 49, y: 67.5}
+      - {x: 41, y: 63.5}
+      - {x: 41, y: 12.5}
+      - {x: 47, y: 9.5}
+      - {x: 61, y: 9.5}
+      - {x: 67, y: 12.5}
+      - {x: 75, y: 44.5}
+      - {x: 75, y: 63.5}
+      - {x: 71, y: 67.5}
+    - - {x: -7, y: 129.5}
+      - {x: -13, y: 128.5}
+      - {x: -22, y: 121.5}
+      - {x: -22, y: 94.5}
+      - {x: -20, y: 78.5}
+      - {x: -3, y: 68.5}
+      - {x: 4, y: 68.5}
+      - {x: 10, y: 70.5}
+      - {x: 18, y: 77.5}
+      - {x: 18, y: 125.5}
+      - {x: 8, y: 129.5}
+    - - {x: 110, y: 130.5}
+      - {x: 89, y: 130.5}
+      - {x: 76, y: 126.5}
+      - {x: 76, y: 77.5}
+      - {x: 88, y: 69.5}
+      - {x: 99, y: 69.5}
+      - {x: 112, y: 84.5}
+      - {x: 116, y: 104.5}
+      - {x: 116, y: 127.5}
+    - - {x: -92, y: 129.5}
+      - {x: -113, y: 129.5}
+      - {x: -125, y: 126.5}
+      - {x: -125, y: 98.5}
+      - {x: -121, y: 70.5}
+      - {x: -89, y: 70.5}
+      - {x: -85, y: 102.5}
+      - {x: -85, y: 125.5}
+    - - {x: 60, y: 128.5}
+      - {x: 37, y: 128.5}
+      - {x: 26, y: 124.5}
+      - {x: 26, y: 81.5}
+      - {x: 38, y: 70.5}
+      - {x: 51, y: 70.5}
+      - {x: 66, y: 83.5}
+      - {x: 66, y: 123.5}
+    - - {x: -73, y: 129.5}
+      - {x: -75, y: 128.5}
+      - {x: -75, y: 80.5}
+      - {x: -57, y: 71.5}
+      - {x: -45, y: 71.5}
+      - {x: -42, y: 72.5}
+      - {x: -35, y: 96.5}
+      - {x: -35, y: 127.5}
+      - {x: -41, y: 129.5}
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
