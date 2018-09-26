@@ -11,9 +11,11 @@ public class Movement : MonoBehaviour {
     public float XCoordinate2;
     public float YCoordinate1;
     public float YCoordinate2;
+    public int actionPoint;
 
     void Start ()
     {
+        actionPoint = 20;
         MoveSpeed = 5;
         anim= GetComponent<Animator>();
         bcol = GetComponent<BoxCollider2D>();
@@ -26,7 +28,7 @@ public class Movement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         transform.Translate(new Vector2(Input.GetAxis("Horizontal") * Time.deltaTime * MoveSpeed, Input.GetAxis("Vertical") * Time.deltaTime * MoveSpeed));
-        /* if (Input.GetAxis("Vertical") > 0)
+         if (Input.GetAxis("Vertical") > 0)
          {
              anim.SetInteger("AnimState", 1);
 
@@ -49,7 +51,7 @@ public class Movement : MonoBehaviour {
          {
              anim.SetInteger("AnimState", 2);
          }
-           else if(Input.GetAxis("))*/
+           //else if(Input.GetAxis("))
         XCoordinate2 = XCoordinate1;
         YCoordinate2 = YCoordinate1;
         YCoordinate1 = transform.position.y;
@@ -99,5 +101,8 @@ public class Movement : MonoBehaviour {
             PlayerPrefs.SetFloat("playerY", transform.position.y);
             SceneManager.LoadScene("Battle");
         }
+        if(other.CompareTag("Collider")){
+            SceneManager.LoadScene("Working proto");
+            } 
     }
 }
