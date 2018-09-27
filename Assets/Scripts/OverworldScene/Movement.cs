@@ -92,7 +92,7 @@ public class Movement : MonoBehaviour {
         }
 	}
     
-    void OnTriggerEnter2D(Collider2D other)
+    /*void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Enemy") && PlayerPrefs.GetInt("Enemy1") != 1)
         {
@@ -103,6 +103,7 @@ public class Movement : MonoBehaviour {
         }
         if(other.CompareTag("Collider")){
             SceneManager.LoadScene("Working proto");
+
             } 
-    }
+    }*/
 }
